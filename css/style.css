@@ -15,7 +15,7 @@
   /* Container Utility */
   .container {
     width: 90%;
-    max-width: 1200px;
+    max-width:1200px;
     margin: auto;
   }
   
@@ -182,4 +182,17 @@
 }
 .contact-form button:hover {
   background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
 }
